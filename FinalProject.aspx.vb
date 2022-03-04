@@ -3,10 +3,8 @@ Imports System.Data.SqlClient
 Partial Class MIS_325_Final_Project_FinalProject
     Inherits System.Web.UI.Page
 
-#Region "Connection"
-    Private Shared con As New SqlConnection("Data Source = cb-ot-devst06.ad.wsu.edu; initial catalog = MF13nikolas.pringle; Persist Security Info = True; User ID = nikolas.pringle; Password = 5d862770")
-#End Region
-
+    'connection variable hidden
+    
 #Region "Other Variables"
     Public Shared helpmechooseActiveViewSelect As Integer 'we need this for our recommendation function 
     Public Shared gintloopcounter As Integer = 0 'needed for our login page, where it locks the user if password entered incorrectly to many times
